@@ -1,6 +1,6 @@
 # Earnings Call Transcripts and Risk
 
-The task here is to forecast stock price volatility for the trading day immediately following an earnings call. The inputs are pieces of text, in particular earnings transcripts. The outputs are the labels +1 or -1 for volatility either going up or down after the call. The Machine Learning classifiers used here were Support Vector Machines, Neural Networks, Random Forests, and XGBoost. Each classifier's accuracy performance was backtested over a period of around 6 years. 
+The task here is to forecast stock return volatility for the trading day immediately following an earnings call. The inputs are pieces of text, in particular earnings transcripts. The outputs are the labels +1 or -1 for volatility either going up or down after the call. The Machine Learning classifiers used here were Support Vector Machines, Neural Networks, Random Forests, and XGBoost. Each classifier's accuracy performance was backtested over a period of around 6 years. 
 
 ## Installation
 
