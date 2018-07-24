@@ -2,15 +2,15 @@
 
 The task here is to forecast stock return volatility for the trading day immediately following an earnings call. The inputs are pieces of text, in particular earnings transcripts. The outputs are the labels +1 or -1 for volatility either going up or down after the call. The Machine Learning classifiers used here were Support Vector Machines, Neural Networks, Random Forests, and XGBoost. Each classifier's accuracy performance was backtested over a period of around 6 years. 
 
-## Installation
+## Data
 
-TODO: Describe the installation process
+TODO: Describe the data
 
-## Usage
+## Transcript processings and extracting features
 
 TODO: Write usage instructions
 
-## Contributing
+## Volatility 
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -18,7 +18,7 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
+## Machine Learning classifiers
 
 TODO: Write history
 
