@@ -10,7 +10,9 @@ Stock price data was obtained mostly via the [Quandl Python Module](https://www.
 
 ## Volatility
 
-TODO: Write usage instructions
+Using historical price data, volatility was calculated as the standard deviation of the natural logarithm of the price relatives and then annualized. More details and the code for this calculation can be found in [vol_module.py](https://github.com/yaroverg/transcripts-risk/blob/master/vol_module.py). This has a function which can calculate volatilities for a given number of days around a date, and the historical window over which standard deviation is calculated can be adjusted as well. 
+
+It is worthwhile to note that instead of historical volatility, we can use implied volatility. This was not done here but can be done in the future. A nice resource for getting implied volatility is [IVolatility](https://www.ivolatility.com/). 
 
 ## Transcript processing and Feature extraction 
 
