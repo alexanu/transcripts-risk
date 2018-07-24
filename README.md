@@ -4,13 +4,15 @@ The task here is to forecast stock return volatility for the trading day immedia
 
 ## Data
 
-TODO: Describe the data
+Earnings Call Transcripts for the top 50 holdings of the SP500 were obtained from [seekingalpha](https://seekingalpha.com/) from 2012-01-01 to 2018-07-01, totaling around 1250 transcripts. The code for this web scraping can be found in [browser_automate.py](https://github.com/yaroverg/transcripts-risk/blob/master/browser_automate.py) where mainly the [selenium](https://pypi.org/project/selenium/) package was used. 
 
-## Transcript processings and extracting features
+Stock price data was obtained mostly via the [Quandl Python Module](https://www.quandl.com/tools/python) and the code for that can be found in [quandl_price_data.py](https://github.com/yaroverg/transcripts-risk/blob/master/quandl_price_data.py) and some missing data was filled in from Yahoo Finance. 
+
+## Volatility
 
 TODO: Write usage instructions
 
-## Volatility 
+## Transcript processing and Feature extraction 
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -18,14 +20,14 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## Features
+## Machine Learning Classifiers
 
 TODO: Write history
 
-## Machine Learning Classifiers
+## Feature Importances
 
 TODO: Write credits
 
-## Feature Importances
+## something
 
 TODO: Write license
