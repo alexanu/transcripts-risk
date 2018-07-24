@@ -1,6 +1,6 @@
-# Earning Call Transcripts and Risk
+# Earnings Call Transcripts and Risk
 
-TODO: Write a project description
+The task here is to forecast stock price volatility for the trading day immediately following an earnings call. The inputs are pieces of text, in particular earnings transcripts. The outputs are the labels +1 or -1 for volatility either going up or down after the call. 
 
 ## Installation
 
