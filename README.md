@@ -16,11 +16,11 @@ It is worthwhile to note that instead of historical volatility, we can use impli
 
 ## Transcript processing  
 
-The first tool used to parse the transcript html files was [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) and the code with all the details can be found in [soup_module](https://github.com/yaroverg/transcripts-risk/blob/master/soup_module.py). Each transcript was split into two parts: the management discussion part and the question-and-answer part. The stock ticker was extracted from each transcript as well as the date of the call and whether it happened before the market opened or after the market closed. Lists of sentences and words were obtained from each part using [nltk](https://www.nltk.org/). 
+The first tool used to parse the transcript html files was [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) and the code with all the details can be found in [soup_module.py](https://github.com/yaroverg/transcripts-risk/blob/master/soup_module.py). Each transcript was split into two parts: the management discussion part and the question-and-answer part. The stock ticker was extracted from each transcript as well as the date of the call and whether it happened before the market opened or after the market closed. Lists of sentences and words were obtained from each part using [nltk](https://www.nltk.org/). 
 
 ## Features
 
-The features were generated at the same stage as transcript processing and the code can be found in [soup_module.py](.../blob/master/soup_module.py). For both the management part and the Q&A part of a transcript we had the following features: 
+The features were generated at the same stage as transcript processing and the code can be found in [soup_module.py](https://github.com/yaroverg/transcripts-risk/blob/master/soup_module.py). For both the management part and the Q&A part of a transcript we had the following features: 
 
 * [Vader](https://github.com/cjhutto/vaderSentiment) Sentiment Analysis Python package
   * The Vader compound sentiment score was computed for each sentence and then the features used were the mean, standard deviation and skewness of those scores 
