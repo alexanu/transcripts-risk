@@ -63,7 +63,6 @@ The split of the data into training and testing subsets was done with the idea o
 
 
 
-
 ## Feature Importances
 
 TODO: Write credits
