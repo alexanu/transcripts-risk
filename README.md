@@ -37,7 +37,7 @@ The features were generated at the same stage as transcript processing and the c
 
 
 * Positive words from the [Loughran-McDonald](https://sraf.nd.edu/textual-analysis/resources/) financial dictionary
-  * The fraction of positive words relative to the total number of words was used. Note that negative words were not used because "question" is classified as negative but appears frequently in earnings calls generally without a negative connotation. 
+  * The fraction of positive words relative to the total number of words was used. Note that negative words were not used because the word "question" is classified as negative but appears frequently in earnings calls generally without a negative connotation. 
 
 
 
