@@ -64,7 +64,7 @@ The split of the data into training and testing subsets was done with the idea o
 
 ## Feature Evaluation
 
-The code for feature selection can also be found in [ML_training_testing.py](https://github.com/yaroverg/transcripts-risk/blob/master/ML_training_testing.py).The relevance of each feature was tested with feature importances from XGBoost and Random Forests, and also with feature weights from an SVC with a linear kernel. Recursive Feature Elimination performed in a cross-validation loop ([RFECV](http://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFECV.html#sklearn.feature_selection.RFECV)) was used to find the optimal number of features. 
+The code for feature selection can also be found in [ML_training_testing.py](https://github.com/yaroverg/transcripts-risk/blob/master/ML_training_testing.py). The relevance of each feature was tested with feature importances from XGBoost and Random Forests, and also with feature weights from an SVC with a linear kernel. Recursive Feature Elimination performed in a cross-validation loop ([RFECV](http://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFECV.html#sklearn.feature_selection.RFECV)) was used to find the optimal number of features. 
 
 The feature importances from XGBoost and Random Forests were all nearly the same, suggesting that all of the feature were equally important. RFECV was implying that the optimal number of features was all of them, consistent with the sense that all of the features were equivalent in terms of predictive power. The figure below shows the importances of each feature. 
 
