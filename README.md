@@ -23,7 +23,7 @@ The first tool used to parse the transcript html files was [Beautiful Soup](http
 The features were generated at the same stage as transcript processing and the code can be found in [soup_module.py](.../blob/master/soup_module.py). For both the management part and the Q&A part of a transcript we had the following features: 
 
 * [Vader](https://github.com/cjhutto/vaderSentiment) Sentiment Analysis Python package
-  * The Vader compound sentiment score was computed for each sentence and then the features were the mean, standard deviation and skewness of those scores 
+  * The Vader compound sentiment score was computed for each sentence and then the features used were the mean, standard deviation and skewness of those scores 
  
 
 * [Textstat](https://github.com/shivam5992/textstat) Python package for calculating readability and complexity of a corpus 
