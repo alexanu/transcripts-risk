@@ -23,21 +23,21 @@ The first tool used to parse the transcript html files was [Beautiful Soup](http
 The features were generated at the same stage as transcript processing and the code can be found in [soup_module.py](.../blob/master/soup_module.py). For both the management part and the Q&A part of a transcript we had the following features: 
 
 * [Vader](https://github.com/cjhutto/vaderSentiment) Sentiment Analysis Python package
- * The Vader compound sentiment score was computed for each sentence and then the features were the mean, standard deviation and skewness of those scores 
+  * The Vader compound sentiment score was computed for each sentence and then the features were the mean, standard deviation and skewness of those scores 
  
 
 * [Textstat](https://github.com/shivam5992/textstat) Python package for calculating readability and complexity of a corpus 
- * The Coleman-Liau Index was found for both parts of the transcript which represented the reading grade level of the text
- * The fraction of difficult words present relative to the total number of words in each part was also used
+  * The Coleman-Liau Index was found for both parts of the transcript which represented the reading grade level of the text
+  * The fraction of difficult words present relative to the total number of words in each part was also used
 
 
 * [Pysentiment](https://github.com/hanzhichao2000/pysentiment/) library for Sentiment Analysis using the [Loughran-McDonald](https://sraf.nd.edu/textual-analysis/resources/) financial dictionary
- * The Polarity of each part was calculated which gives a sense of spread between positive and negative words
- * The Subjectivity of each part was also used which gives the fraction of non-neutral words relative to the total number of words  
+  * The Polarity of each part was calculated which gives a sense of spread between positive and negative words
+  * The Subjectivity of each part was also used which gives the fraction of non-neutral words relative to the total number of words  
 
 
 * Positive words from the [Loughran-McDonald](https://sraf.nd.edu/textual-analysis/resources/) financial dictionary
- * The fraction of positive words relative to the total number of words was used. Note that negative words were not used because "question" is classified as negative but appears frequently in earnings calls generally without a negative connotation. 
+  * The fraction of positive words relative to the total number of words was used. Note that negative words were not used because "question" is classified as negative but appears frequently in earnings calls generally without a negative connotation. 
 
 
 
