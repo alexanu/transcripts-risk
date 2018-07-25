@@ -14,7 +14,7 @@ Using historical price data, volatility was calculated as the standard deviation
 
 It is worthwhile to note that instead of historical volatility, we can use implied volatility. This was not done here but can be done in the future. A nice resource for getting implied volatility is [IVolatility](https://www.ivolatility.com/). 
 
-## Transcript processing  
+## Transcript Processing  
 
 The first tool used to parse the transcript html files was [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) and the code with all the details can be found in [soup_module.py](https://github.com/yaroverg/transcripts-risk/blob/master/soup_module.py). Each transcript was split into two parts: the management discussion part and the question-and-answer part. The stock ticker was extracted from each transcript as well as the date of the call and whether it happened before the market opened or after the market closed. Lists of sentences and words were obtained from each part using [nltk](https://www.nltk.org/). 
 
