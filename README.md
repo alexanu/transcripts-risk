@@ -40,12 +40,29 @@ The features were generated at the same stage as transcript processing and the c
   * The fraction of positive words relative to the total number of words was used. Note that negative words were not used because the word "question" is classified as negative but appears frequently in earnings calls generally without a negative connotation. 
 
 
+## Machine Learning
+
+Code for the Machine Learning stage can be found in [ML_training_testing.py](https://github.com/yaroverg/transcripts-risk/blob/master/ML_training_testing.py) where mainly the [scikit-learn](http://scikit-learn.org/stable/)  library was used. The classifiers used and tested on this project were the following:
+
+* [Support Vector Machines](http://scikit-learn.org/stable/modules/svm.html#svm-classification) using the default Radial Basis Function kernel as well as a linear kernel
+* [Neural networks](http://scikit-learn.org/stable/modules/neural_networks_supervised.html)(Multi-layer Perceptron) using two hidden layers and the default "adam" solver
+* [Random Forests](http://scikit-learn.org/stable/modules/ensemble.html#forest) using an increased number of estimators
+* [XGBoost](https://xgboost.readthedocs.io/en/latest/python/python_api.html#module-xgboost.sklearn) with more estimators and subsampling during training
+
+Note that SVM classifiers performed very well without parameter tuning while MLP, Random Forest and XGBoost classifiers required tuning. 
+
+The split of the data into training and testing subsets was done with the idea of training on recent historical observations and testing the constructed classifier on the immediate following observations. Observations were grouped into which quarter of the year they occurred in. Quarters were defined as the first 3 months of the year, the next three and so on. For example, a classifier was trained on transcripts that occurred within the time range [2016-7-1, 2017-7-1) and was tested on transcripts that occurred in the range [2017-7-1, 2017-10-1). From 2012-1-1 to 2018-4-1 we had 21 such training/testing sets. For each training/testing set we calculated each classifier's accuracy score. Then the classifiers were evaluated according to the min, average, and max of their 21 accuracy scores. The best performing classifier was SVM with the rbf kernel for its high average score, high minimum score and great results with default parameters. The table below summarizes the results. 
+
+|   | Min score  | Avg Score  | Max Score  |
+|---|:---:|:---:|:---:|
+| SVM_rbf  | 53.06%  | 70.31%  | 86.27%  |
+| SVM_linear  | 51.02%  | 70.31%  | 88.00%  |
+| MLP  | 51.02%  | 66.02%  | 82.00%  | 
+| RF  | 51.02%  | 65.93%  | 82.00%   | 
+| XGBoost  | 53.06%  | 64.72%  | 76.00%  | 
 
 
 
-## Machine Learning Classifiers
-
-TODO: Write history
 
 ## Feature Importances
 
