@@ -10,7 +10,7 @@ Stock price data was obtained mostly via the [Quandl Python Module](https://www.
 
 | Example transcript fragment  |
 |:--:|
-| ![Example transcript](https://github.com/yaroverg/transcripts-risk/blob/master/transcript_example.PNG)  |
+| ![Example transcript](https://github.com/yaroverg/transcripts-risk/blob/master/images/transcript_example.PNG)  |
 
 
 ## Volatility
@@ -21,7 +21,7 @@ It is worthwhile to note that instead of historical volatility, we can use impli
 
 | Microsoft's volatility reaction after their 10/26/2017 Earnings | 
 |:--:| 
-| ![MSFT volatility](https://github.com/yaroverg/transcripts-risk/blob/master/vol_graph.PNG) |
+| ![MSFT volatility](https://github.com/yaroverg/transcripts-risk/blob/master/images/vol_graph.PNG) |
 
 ## Transcript Processing  
 
@@ -78,7 +78,7 @@ The code for feature selection can also be found in [ML_training_testing.py](htt
 
 The feature importances from XGBoost and Random Forests were all nearly the same, suggesting that all of the feature were equally important. RFECV was implying that the optimal number of features was all of them, consistent with the sense that all of the features were equivalent in terms of predictive power. The figure below shows the importances of each feature. 
 
-![Feature Importances](https://github.com/yaroverg/transcripts-risk/blob/master/XGBoost_feature_importances_plot.png)
+![Feature Importances](https://github.com/yaroverg/transcripts-risk/blob/master/images/XGBoost_feature_importances_plot.png)
 
 
 ## Further Work
