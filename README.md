@@ -8,7 +8,7 @@ Earnings Call Transcripts for the top 50 holdings of the SP500 were obtained fro
 
 Stock price data was obtained mostly via the [Quandl Python Module](https://www.quandl.com/tools/python) and the code for that can be found in [quandl_price_data.py](https://github.com/yaroverg/transcripts-risk/blob/master/quandl_price_data.py) and some missing data was filled in from Yahoo Finance. 
 
-| Example transcript snippet  |
+| Example transcript fragment  |
 |:--:|
 | ![Example transcript](https://github.com/yaroverg/transcripts-risk/blob/master/transcript_example.PNG)  |
 
