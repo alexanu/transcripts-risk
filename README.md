@@ -8,6 +8,10 @@ Earnings Call Transcripts for the top 50 holdings of the SP500 were obtained fro
 
 Stock price data was obtained mostly via the [Quandl Python Module](https://www.quandl.com/tools/python) and the code for that can be found in [quandl_price_data.py](https://github.com/yaroverg/transcripts-risk/blob/master/quandl_price_data.py) and some missing data was filled in from Yahoo Finance. 
 
+> We expanded our global datacenter footprint to 54 regions, more than any other cloud provider, and with the most comprehensive compliance coverage in the industry. We added nearly 500 new Azure capabilities in the last year alone, focused on both existing workloads and new workloads such as IoT and AI at the Edge. We introduced Azure Stack and Azure Sphere, two first-of-their kind cloud-to-edge solutions that are already seeing strong customer demand.
+
+
+
 ## Volatility
 
 Using historical price data, volatility was calculated as the standard deviation of the natural logarithm of the price relatives and then annualized. More details and the code for this calculation can be found in [vol_module.py](https://github.com/yaroverg/transcripts-risk/blob/master/vol_module.py). This has a function which can calculate volatilities for a given number of days around a date, and the historical window over which standard deviation is calculated can be adjusted as well. 
