@@ -53,6 +53,7 @@ Note that SVM classifiers performed very well without parameter tuning while MLP
 
 The split of the data into training and testing subsets was done with the idea of training on recent historical observations and testing the constructed classifier on the immediate following observations. Observations were grouped into which quarter of the year they occurred in. Quarters were defined as the first 3 months of the year, the next three and so on. For example, a classifier was trained on transcripts that occurred within the time range \[2016-7-1, 2017-7-1) and was tested on transcripts that occurred in the \[range 2017-7-1, 2017-10-1). From 2012-1-1 to 2018-4-1 we had 21 such training/testing sets. For each training/testing set we calculated each classifier's accuracy score. Then the classifiers were evaluated according to the min, average, and max of their 21 accuracy scores. The best performing classifier was SVM with the rbf kernel for its high average score, high minimum score and great results with default parameters. The table below summarizes the results. 
 
+
 |   | Min score  | Avg Score  | Max Score  |
 |---|:---:|:---:|:---:|
 | SVM_rbf  | 53.06%  | 70.31%  | 86.27%  |
