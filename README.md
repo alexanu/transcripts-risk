@@ -16,7 +16,7 @@ It is worthwhile to note that instead of historical volatility, we can use impli
 
 ## Transcript Processing  
 
-The first tool used to parse the transcript html files was [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) and the code with all the details can be found in [soup_module.py](https://github.com/yaroverg/transcripts-risk/blob/master/soup_module.py). Each transcript was split into two parts: the management discussion part and the question-and-answer part. The stock ticker was extracted from each transcript as well as the date of the call and whether it happened before the market opened or after the market closed. Lists of sentences and words were obtained from each part using [nltk](https://www.nltk.org/). 
+The first tool used to parse the transcript html files was [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) and the code with all the details can be found in [soup_module.py](https://github.com/yaroverg/transcripts-risk/blob/master/soup_module.py). Each transcript was split into two parts: the management discussion part and the question-and-answer part. The stock ticker was extracted from each transcript as well as the date of the call and whether it happened before the market opened or after the market closed. Lists of sentences and words were obtained from each part using the [Natural Language Toolkit](https://www.nltk.org/) library. 
 
 ## Features
 
