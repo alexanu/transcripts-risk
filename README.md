@@ -78,7 +78,7 @@ The code for feature selection can also be found in [ML_training_testing.py](htt
 
 The feature importances from XGBoost and Random Forests were all nearly the same, suggesting that all of the feature were equally important. RFECV was implying that the optimal number of features was all of them, consistent with the sense that all of the features were equivalent in terms of predictive power. The figure below shows the importances of each feature. 
 
-![Feature Importances](https://github.com/yaroverg/transcripts-risk/blob/master/XGBoost_feature_importances_figure.png)
+![Feature Importances](https://github.com/yaroverg/transcripts-risk/blob/master/XGBoost_feature_importances_plot.png)
 
 
 ## Further Work
