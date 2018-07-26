@@ -75,3 +75,7 @@ The feature importances from XGBoost and Random Forests were all nearly the same
 ## Further Work
 
 Some things that can be done to extend this work are: getting older transcripts and also increasing the list of companies. With more companies, the transcripts can be grouped by sector and classifiers can then be sector specific. As mentioned earlier, implied volatility from equity options can be used instead of historical volatility. Also we can increase the number of classes in the classification task. An example for three classes would be to determine if the change in volatility was positive, negative, or small (less than some threshold). Another natural extension would be to test different classifiers and new features. 
+
+
+<span style="color:blue">some *This is Blue italic.* text</span>
+
